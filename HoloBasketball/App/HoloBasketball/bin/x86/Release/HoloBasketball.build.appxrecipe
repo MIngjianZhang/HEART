@@ -346,31 +346,31 @@
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\.nuget\packages\system.xml.xmlserializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineProxy.dll">
+    <AppxPackagedFile Include="C:\Program Files\Unity 2018.1.0b9\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineProxy.dll">
       <PackagePath>UnityEngineProxy.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\Unprocessed\WinRTLegacy.dll">
       <PackagePath>WinRTLegacy.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityPlayer.dll">
+    <AppxPackagedFile Include="C:\Program Files\Unity 2018.1.0b9\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityPlayer.dll">
       <PackagePath>UnityPlayer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\BridgeInterface.dll">
+    <AppxPackagedFile Include="C:\Program Files\Unity 2018.1.0b9\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\BridgeInterface.dll">
       <PackagePath>BridgeInterface.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineDelegates.dll">
+    <AppxPackagedFile Include="C:\Program Files\Unity 2018.1.0b9\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineDelegates.dll">
       <PackagePath>UnityEngineDelegates.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\BridgeInterface.winmd">
+    <AppxPackagedFile Include="C:\Program Files\Unity 2018.1.0b9\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\BridgeInterface.winmd">
       <PackagePath>BridgeInterface.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineDelegates.winmd">
+    <AppxPackagedFile Include="C:\Program Files\Unity 2018.1.0b9\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineDelegates.winmd">
       <PackagePath>UnityEngineDelegates.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityPlayer.winmd">
+    <AppxPackagedFile Include="C:\Program Files\Unity 2018.1.0b9\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityPlayer.winmd">
       <PackagePath>UnityPlayer.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\WinRTBridge.winmd">
+    <AppxPackagedFile Include="C:\Program Files\Unity 2018.1.0b9\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\WinRTBridge.winmd">
       <PackagePath>WinRTBridge.winmd</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\Resource.res">
@@ -386,6 +386,10 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
@@ -449,32 +453,38 @@
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.TextRenderingModule.dll">
-      <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UNETModule.dll">
+      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.TerrainPhysicsModule.dll">
-      <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UIModule.dll">
+      <PackagePath>UnityEngine.UIModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.TerrainModule.dll">
-      <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.SpriteMaskModule.dll">
-      <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.SharedInternalsModule.dll">
-      <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.StyleSheetsModule.dll">
-      <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.TextRenderingModule.dll">
+      <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UIModule.dll">
-      <PackagePath>UnityEngine.UIModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.SpriteMaskModule.dll">
+      <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.TerrainPhysicsModule.dll">
+      <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.TerrainModule.dll">
+      <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.StyleSheetsModule.dll">
+      <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UnityAnalyticsModule.dll">
+      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.WebModule.dll">
+      <PackagePath>UnityEngine.WebModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
@@ -482,26 +492,26 @@
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.VehiclesModule.dll">
-      <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.XRModule.dll">
+      <PackagePath>UnityEngine.XRModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.WebModule.dll">
-      <PackagePath>UnityEngine.WebModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.VehiclesModule.dll">
+      <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UnityWebRequestWWWModule.dll">
-      <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UnityWebRequestAudioModule.dll">
+      <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UnityWebRequestAssetBundleModule.dll">
+      <PackagePath>UnityEngine.UnityWebRequestAssetBundleModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UnityAnalyticsModule.dll">
-      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UNETModule.dll">
-      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UnityWebRequestWWWModule.dll">
+      <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
@@ -509,8 +519,8 @@
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UnityWebRequestAudioModule.dll">
-      <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.CrashReportingModule.dll">
+      <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
@@ -518,8 +528,8 @@
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.AudioModule.dll">
-      <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.GameCenterModule.dll">
+      <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
@@ -527,14 +537,17 @@
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.CrashReportingModule.dll">
-      <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.AudioModule.dll">
+      <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.AssetBundleModule.dll">
-      <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.AIModule.dll">
+      <PackagePath>UnityEngine.AIModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.AssetBundleModule.dll">
+      <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
@@ -542,11 +555,11 @@
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.AIModule.dll">
-      <PackagePath>UnityEngine.AIModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.GridModule.dll">
+      <PackagePath>UnityEngine.GridModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.GameCenterModule.dll">
-      <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.Physics2DModule.dll">
+      <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
@@ -554,8 +567,8 @@
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.ParticlesLegacyModule.dll">
-      <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.SharedInternalsModule.dll">
+      <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
@@ -563,14 +576,14 @@
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.Physics2DModule.dll">
-      <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.ParticlesLegacyModule.dll">
+      <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.IMGUIModule.dll">
+      <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.GridModule.dll">
-      <PackagePath>UnityEngine.GridModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
@@ -578,14 +591,8 @@
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.IMGUIModule.dll">
-      <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\nunit.framework.dll">
-      <PackagePath>nunit.framework.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\App\HoloBasketball\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>

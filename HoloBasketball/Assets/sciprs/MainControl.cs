@@ -22,6 +22,7 @@ public class MainControl : MonoBehaviour
     public Text missiontext;
     public Text errortext;
     public GameObject hand;
+    public Slider Progressslide;
     private float fireRate = 10.0F;
     private float nextFire = 0.0F;
     private string request = "Request not received yet";
@@ -65,7 +66,7 @@ public class MainControl : MonoBehaviour
         errortext.text = request + " " + hand.transform.localEulerAngles.y;
         float a = 0;
         missiontext.text = "Request not received yet";
-        if (!request.Equals("Request not received yet")) {
+        /*if (!request.Equals("Request not received yet")) {
             if (Tutorialed == false) {
                 missiontext.text = "Keep using your maximum strength. Tutorial Part";
                 double tutorial = Double.Parse(request);
@@ -95,7 +96,8 @@ public class MainControl : MonoBehaviour
                         if (((Time.time - startgametime) % 10) >= 2 && ((Time.time - startgametime) % 10) < 5 && ((Time.time - startgametime)) < 300)
                         {
                             missiontext.text = "Use your MAXIMUM strength now~";
-                            counttext.text = "Count down " + (3 - (Time.time - startgametime) % 10);
+                            counttext.text = "Count down " + (5 - (Time.time - startgametime) % 10);
+                            Progressslide.value += ToSingle(0.03);
                             if (data > EMGtemp)
                             {
                                 EMGtemp = data;
@@ -107,6 +109,8 @@ public class MainControl : MonoBehaviour
                         }
                         if (((Time.time - startgametime) % 10) >= 5 && ((Time.time - startgametime) % 10) < 10 && ((Time.time - startgametime)) < 300 && ((Time.time - startgametime)) > nextFire)
                         {
+                            missiontext.text = "Shooting";
+                            counttext.text = "Count down " + (10 - (Time.time - startgametime) % 10);
                             nextFire = ToSingle(Time.time - startgametime) + fireRate;
                             if (EMGtemp > EMGMaximum * 0.8)
                             {
@@ -149,6 +153,8 @@ public class MainControl : MonoBehaviour
                         else if ((Time.time - startgametime) >= 300)
                         {
                             missiontext.text = "CONGRATULATIONS! You shot " + Success + " out of 30 balls!";
+                            counttext.text = "Thank you for playing";
+                            Progressslide.value = 1;
                         }
                     }
 
@@ -161,7 +167,7 @@ public class MainControl : MonoBehaviour
                 a = hand.transform.localEulerAngles.y;
             }
         }
-
+        */
     }
 
     private void ThrowNewBallSuccess()

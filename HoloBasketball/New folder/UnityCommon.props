@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <UnityWSASolutionName>HoloBasketball</UnityWSASolutionName>
+        <UnityWSASolutionDir>C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\New folder\</UnityWSASolutionDir>
+        <UnityProjectDir>C:\Users\ROC-HCI-1\Downloads\新建文件夹\holobasketball-master\holobasketball-master\HoloBasketball\</UnityProjectDir>
+        <UnityWSAPlayerDir>C:\Program Files\Unity 2018.1.0b10\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
+        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
+    </PropertyGroup>
+</Project>
