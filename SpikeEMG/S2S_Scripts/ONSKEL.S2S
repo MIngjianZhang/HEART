@@ -1,0 +1,109 @@
+'onSkel.s2s
+'This is a skeleton on-line script
+'it contains toolbar to enable the user to open 
+' a new data file for sampling and start and stop sampling.
+'It displays the log view at the botton of the screen to place
+' values in that the user may wish to extract
+'All on-line analysis should be placed in the idle routine
+'
+'Note this script is UNDER DEVELOPMENT BY CED and is included for
+'illustration only. We make no warranties as to its suitability
+'or otherwise. It has not been thoroughly tested.
+'You should use it 'as is'
+'
+'Written by Diarmid Campbell for CED September 1997.
+
+var data%;								'Handle of new data file
+var sTime;								'The last time we looked at the idle routine
+
+ToolbarVisible(1);						'Make toolbar visible always
+New%();									'Set up new sampling window
+DoToolbar();							'Do the toolbar
+
+func New%()								'New sampling window
+View(LogHandle());						'Make log view the current view
+EditSelectAll();						'Select all text in log view
+EditClear();							'Delete it
+Window(0,80,100,100);					'Display it at the bottom of the screen
+WindowVisible(1);						'Make it visbible
+
+if data%>0 then							'If there is already a data view open then
+  View(data%);							'Close it
+  FileClose();
+endif;
+
+data%:=FileNew(0,1);					'Open a new data file for sampling
+if data%<0 then Message("Unable to open new data file");Halt; endif;
+DrawMode(-1,2);							'Set event draw mode to lines
+Window(0,0,100,80);						'Make data window in top bit of screen
+XRange(0,10);
+
+FrontView(LogHandle());					'Bring the Log view to the front
+FrontView(data%);						'Bring the data view to the front
+ToolbarEnable(3,0);						'Disable "Sample stop" button
+ToolbarEnable(2,1);						'Disable "Sample stop" button
+ToolbarText("Press SAMPLE START to commence sampling");
+return 1;
+end;
+
+proc DoToolbar()
+ToolbarSet(0,"",Idle%);					'Call Idle%() whenever there is free time
+ToolbarSet(1,"Quit",Quit%);				'Set up toolbar buttons
+ToolbarSet(2,"Sample start", Start%);
+ToolbarSet(3,"Sample stop", Stop%);
+ToolbarSet(4,"New file", New%);
+ToolbarEnable(3,0);						'Disable "Sample stop" button
+Toolbar("Press SAMPLE START to commence sampling", 1023);					'Wait here until quit is pressed
+'ChanProcessAdd(1, 0);
+'ChanProcessAdd(1, 1);
+'ChanProcessAdd(2, 0);
+'ChanProcessAdd(2, 1);
+end;
+
+func Quit%()							'If "Quit" is pressed
+SampleStop();							'Stop sampling
+return 0;								'leave toolbar
+end;
+
+func Start%()							'If "Start" is pressed
+SampleStart();							'Start sampling
+ToolbarEnable(4,0);						'Disable "New file" button
+ToolbarEnable(3,1);						'Enable "Sample stop" button
+ToolbarEnable(2,0);						'Disable "Sample start" button
+ToolbarEnable(1,0);						'Disable "Quit" button
+ToolbarText("Press SAMPLE STOP to stop sampling");
+return 1;								'Stay with toolbar
+end;
+
+func Stop%()							'If "Stop" is pressed
+SampleStop();							'Stop sampling
+ToolbarEnable(4,1);						'Enable "New file" button
+ToolbarEnable(3,0);						'Disable "Sample stop" button
+ToolbarEnable(1,1);						'Enable "Quit" button
+ToolbarText("Press FILE NEW to capture more data");
+return 1;								'Stay in toolbar
+end;
+
+func Idle%()							'The Idle routine is called when PC has time
+var eTime;
+View(data%);
+eTime:=Maxtime();
+
+'I add this to test
+'func ChanProcessAdd(0,0);
+ '   end;
+'func ChanProcessAdd(0,1);
+'end;
+'func ChanProcessAdd(1,0);
+'end;
+'func ChanProcessAdd(1,1);
+'end;    
+    
+'PLACE CODE IN HERE TO ANALYSE THE DATA FILE BETWEEN sTime and eTime
+PrintLog("%2d : %8g %s\n", 1, ChanValue(1, eTime), ChanUnits$(1));
+ProgRun("C:\\Users\\ROC-HCI-1\\Downloads\\HEART-20170925T165908Z-001\\HEART\\tmpClient\\tmpClient\\bin\\Debug\\tmpClient.exe "+Str$(Abs(ChanValue(1, eTime)))+" "++Str$(Abs(ChanValue(2, eTime))), 0); 
+
+sTime:=eTime;
+return 1;								'Stay in toolbar
+end;
+
