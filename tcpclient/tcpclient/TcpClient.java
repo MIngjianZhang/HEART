@@ -33,13 +33,15 @@ import java.nio.charset.StandardCharsets;
         outToServer.writeBytes("START");
         outToServer.flush();
 
-	System.out.println("SENT");
-       //read line from server
-        //displayBytes = inFromServer.readLine();
+	    System.out.println("SENT");
+        //read line from server
+        displayBytes = inFromServer.readLine();
+        System.out.println(displayBytes + " hahaha ");
 
-        while((displayBytes = inFromServer.readLine()) != null)
+        while(displayBytes != null)
         {
-        System.out.print(displayBytes);
+        //System.out.print(displayBytes);
+        //System.out.print("MEOW");
         }
         //clientSocket.close();
     }
