@@ -36,6 +36,9 @@ import java.nio.charset.StandardCharsets;
 
        //read line from server
         //displayBytes = inFromServer.readLine();
+        displayFloat = inFromServer.readFloat();
+        System.out.println(displayFloat);
+        System.out.println("MEWOW");
 
         while(ok)
         {
