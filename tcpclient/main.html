@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatiable" content="ie=edge">
+	<title>
+		Document
+	</title>
+	<script type="//cdn.bootcss.com/d3/4.10.0/d3.js"></script>
+</head>
+
+<body>
+	<div id="svg"></div>
+	<script>
+		const dataset = [1,2,3,4,5,6,6,7];
+		const height = 400;
+		const width = 500;
+		const svg = d3.select("#svg").append("svg").attr("height",height).attr("width",width);
+		const padding = {top:20, left:20, right:20, bottom:20};
+		const rectStep = 35;
+		const rectWidth = 30;
+
+		svg.selectAll("rect").data(dataset).enter();
+	</script>
+	
+</body>
+
+</html>

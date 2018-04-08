@@ -21,27 +21,30 @@ import java.nio.charset.StandardCharsets;
         DataOutputStream outToServer =
                 new DataOutputStream(clientSocket.getOutputStream());
 
-
+        BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
 
         //create input stream attached to socket
-        DataInputStream inFromServer = new DataInputStream(clientSocket.getInputStream());
+        //DataInputStream inFromServer = new DataInputStream(clientSocket.getInputStream());
 
 
         //send line to server
         //outToServer.writeBytes(temp);
-        outToServer.writeBytes("START");
+        temp = "START\r\n";
+        outToServer.writeBytes("START\r\n");
+        outToServer.writeBytes("\r\n");
+        outToServer.writeBytes("\r\n");
         outToServer.flush();
 
-	    System.out.println("SENT");
-        //read line from server
-        displayBytes = inFromServer.readLine();
-        System.out.println(displayBytes + " hahaha ");
+	      System.out.println("SENT");
+       //read line from server
+        //displayBytes = inFromServer.readLine();
+        //displayBytes = "meow";
 
-        while(displayBytes != null)
+        while((displayBytes = inFromServer.readLine())!= null)
         {
-        //System.out.print(displayBytes);
-        //System.out.print("MEOW");
+        //System.out.println("Equals to null");
+        System.out.print(displayBytes);
         }
         //clientSocket.close();
     }

@@ -11,15 +11,14 @@ import java.nio.charset.StandardCharsets;
        public static void main(String[] args) {
          String temp;
          float displayFloat;
-         boolean ok = true;
-         System.out.println("OKAY / /  ");
+         int counter = 0;
+         boolean valid = true;
         try
         {
         //create input stream
         BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
         //create client socket, connect to server
         Socket clientSocket = new Socket("localhost",50041);
-        System.out.println("OKAY / / / ");
         //create output stream attached to socket
         DataOutputStream outToServer =
                 new DataOutputStream(clientSocket.getOutputStream());
@@ -30,21 +29,32 @@ import java.nio.charset.StandardCharsets;
         //create input stream attached to socket
         DataInputStream inFromServer = new DataInputStream(clientSocket.getInputStream());
 
-        System.out.println("OKAY / / / / ");
+
         //send line to server
         //outToServer.writeBytes(temp);
 
        //read line from server
         //displayBytes = inFromServer.readLine();
-        displayFloat = inFromServer.readFloat();
-        System.out.println(displayFloat);
-        System.out.println("MEWOW");
 
-        while(ok)
+        while(true)
         {
 	       displayFloat = inFromServer.readFloat();
-        System.out.println(displayFloat);
-        System.out.println("OKAY / / /  / // / / ");
+         counter++;
+         if(valid){
+          if(counter % 16 == 0){
+            valid = false;
+            counter = 0;
+          }
+         }else{
+          if(counter % 16000 == 0){
+            valid = true;
+            counter = 0;
+          }
+         }
+         if(valid){
+          System.out.println(displayFloat);
+         }
+         
         }
         //clientSocket.close();
     }
