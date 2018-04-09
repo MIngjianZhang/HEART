@@ -53,6 +53,7 @@ import java.nio.charset.StandardCharsets;
           }
          }else{
           if(counter % 16000 == 0){
+		//manually set the frequency to 2HZ...
             valid = true;
             counter = 0;
             
