@@ -35,7 +35,7 @@ import java.nio.ByteBuffer;
         //create input stream attached to socket
         DataInputStream inFromServer = new DataInputStream(clientSocket.getInputStream());
 		
-		ByteBuffer dataBuf = ByteBuffer.allocate(4);
+		ByteBuffer dataBuf = ByteBuffer.allocate(12);
 
 
         //send line to server
@@ -50,8 +50,9 @@ import java.nio.ByteBuffer;
 		   inFromServer.read(tempBytes);
 		   dataBuf.put(tempBytes);
 		   dataBuf.order(ByteOrder.LITTLE_ENDIAN);
-		   displayFloat = dataBuf.getFloat();
+		   displayFloat = dataBuf.getFloat(0);
 		   dataBuf.clear();
+		   dataBuf.order(ByteOrder.BIG_ENDIAN);
 		   //displayFloat = inFromServer.readFloat();
          counter++;
          //test++;
