@@ -1,10 +1,10 @@
-import java.io.BufferedReader;
+  import java.io.BufferedReader;
   import java.io.InputStreamReader;
   import java.net.Socket;
   import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.nio.ByteOrder;
-import java.nio.ByteBuffer;
+  import java.nio.charset.StandardCharsets;
+  import java.nio.ByteOrder;
+  import java.nio.ByteBuffer;
 
 
   public class TcpClientReceiver {
@@ -26,16 +26,11 @@ import java.nio.ByteBuffer;
         //create client socket, connect to server
         Socket clientSocket = new Socket("localhost",50041);
         //create output stream attached to socket
-        DataOutputStream outToServer =
-                new DataOutputStream(clientSocket.getOutputStream());
-
-
-
-
+        DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
         //create input stream attached to socket
         DataInputStream inFromServer = new DataInputStream(clientSocket.getInputStream());
 		
-		ByteBuffer dataBuf = ByteBuffer.allocate(12);
+		    ByteBuffer dataBuf = ByteBuffer.allocate(12);
 
 
         //send line to server
@@ -47,13 +42,13 @@ import java.nio.ByteBuffer;
         while(true)
         {
 	       byte[] tempBytes = new byte[4];
-		   inFromServer.read(tempBytes);
-		   dataBuf.put(tempBytes);
-		   dataBuf.order(ByteOrder.LITTLE_ENDIAN);
-		   displayFloat = dataBuf.getFloat(0);
-		   dataBuf.clear();
-		   dataBuf.order(ByteOrder.BIG_ENDIAN);
-		   //displayFloat = inFromServer.readFloat();
+  		   inFromServer.read(tempBytes);
+  		   dataBuf.put(tempBytes);
+  		   dataBuf.order(ByteOrder.LITTLE_ENDIAN);
+  		   displayFloat = dataBuf.getFloat(0);
+  		   dataBuf.clear();
+  		   dataBuf.order(ByteOrder.BIG_ENDIAN);
+		      //displayFloat = inFromServer.readFloat();
          counter++;
          //test++;
          if(valid){
@@ -79,7 +74,7 @@ import java.nio.ByteBuffer;
             if (send){
               temp2 = displayFloat;
               System.out.println("The first number is "+temp1 +" and the second one is " + temp2);
-              //Process process = new ProcessBuilder("C:\\Users\\ROC-HCI-1\\Downloads\\HEART-20170925T165908Z-001\\HEART\\tmpClient\\tmpClient\\bin\\Debug\\tmpClient.exe","temp1","temp2").start();
+              Process process = new ProcessBuilder("C:\\Users\\ROC-HCI-1\\Downloads\\HEART-20170925T165908Z-001\\HEART\\tmpClient\\tmpClient\\bin\\Debug\\tmpClient.exe","temp1","temp2").start();
             }
             temp1 = displayFloat;
           }
