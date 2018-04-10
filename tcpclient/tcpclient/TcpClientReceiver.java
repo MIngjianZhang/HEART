@@ -51,6 +51,7 @@ import java.nio.ByteBuffer;
 		   dataBuf.put(tempBytes);
 		   dataBuf.order(ByteOrder.LITTLE_ENDIAN);
 		   displayFloat = dataBuf.getFloat();
+		   dataBuf.clear();
 		   //displayFloat = inFromServer.readFloat();
          counter++;
          //test++;
