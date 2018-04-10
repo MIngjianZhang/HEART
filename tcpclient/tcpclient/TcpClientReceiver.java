@@ -3,6 +3,8 @@ import java.io.BufferedReader;
   import java.net.Socket;
   import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.nio.ByteOrder;
+import java.nio.ByteBuffer;
 
 
   public class TcpClientReceiver {
@@ -32,6 +34,8 @@ import java.nio.charset.StandardCharsets;
 
         //create input stream attached to socket
         DataInputStream inFromServer = new DataInputStream(clientSocket.getInputStream());
+		
+		ByteBuffer dataBuf = ByteBuffer.allocate(4);
 
 
         //send line to server
@@ -42,7 +46,12 @@ import java.nio.charset.StandardCharsets;
 
         while(true)
         {
-	       displayFloat = inFromServer.readFloat();
+	       byte[] tempBytes = new byte[4];
+		   inFromServer.read(tempBytes);
+		   dataBuf.put(tempBytes);
+		   dataBuf.order(ByteOrder.LITTLE_ENDIAN);
+		   displayFloat = dataBuf.getFloat();
+		   //displayFloat = inFromServer.readFloat();
          counter++;
          //test++;
          if(valid){
@@ -52,7 +61,7 @@ import java.nio.charset.StandardCharsets;
             
           }
          }else{
-          if(counter % 16000 == 0){
+          if(counter % 15984 == 0){
 		//manually set the frequency to 2HZ...
             valid = true;
             counter = 0;
