@@ -3,6 +3,7 @@
   import java.io.IOException;
   import java.net.Socket;
   import java.io.*;
+  import java.lang.*;
   import java.nio.charset.StandardCharsets;
   import java.nio.ByteOrder;
   import java.nio.ByteBuffer;
@@ -23,8 +24,12 @@
          File dir = new File ("C://Users//ROC-HCI-1//Downloads//HEART-20170925T165908Z-001//HEART//tmpClient//tmpClient//bin//Debug");
          String[] argument = new String[3];
          //argument[0] = "notepad.exe";
+<<<<<<< HEAD
          //argument[0] = "C:\\Users\\ROC-HCI-1\\Downloads\\HEART-20170925T165908Z-001\\HEART\\tmpClient\\tmpClient\\bin\\Debug\\tmpClient.exe";
 	argument[0] = "C:\\Users\\Ania Busza\\Documents\\GitHub\\HEART\\tcpclient\\tcpclient";
+=======
+         argument[0] = "C:\\Users\\ROC-HCI-1\\Downloads\\HEART-20170925T165908Z-001\\HEART\\tmpClient\\tmpClient\\bin\\Debug\\tmpClient.exe";
+>>>>>>> b30782aa37f06eb9cf4a088be40a7f33edb4bbf9
          Runtime runtime = Runtime.getRuntime();
 
         try
@@ -63,7 +68,7 @@
             
           }
          }else{
-          if(counter % 15984 == 0){
+          if(counter % 1584 == 0){
         		//manually set the frequency to 2HZ...
             valid = true;
             counter = 0;
@@ -77,19 +82,31 @@
             //This will print stuff like 1,2,160016,160017
             send = !send;
             if (send){
+<<<<<<< HEAD
               temp2 = displayFloat;
+=======
+              temp2 = Math.abs(displayFloat);
+>>>>>>> b30782aa37f06eb9cf4a088be40a7f33edb4bbf9
               argument[2] = Float.toString(temp2);
               System.out.println("The first number is "+temp1 +" and the second one is " + temp2);
               System.out.println(argument[1] + " hhhhh "+ argument[2]);
 
+<<<<<<< HEAD
               //Process process = new ProcessBuilder(argument).start();
+=======
+              Process process = new ProcessBuilder(argument).start();
+>>>>>>> b30782aa37f06eb9cf4a088be40a7f33edb4bbf9
               /*try{
               Process p = runtime.exec(new String[]{"tmpClient.exe","0.5","1.0"}, null , dir);
               }catch(IOException e){
                 e.printStackTrace();
               }*/
             }
+<<<<<<< HEAD
             temp1 = displayFloat;
+=======
+            temp1 = Math.abs(displayFloat);
+>>>>>>> b30782aa37f06eb9cf4a088be40a7f33edb4bbf9
             argument[1] = Float.toString(temp1);
           }
          }
