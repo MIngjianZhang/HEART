@@ -3,6 +3,7 @@
   import java.io.IOException;
   import java.net.Socket;
   import java.io.*;
+  import java.lang.*;
   import java.nio.charset.StandardCharsets;
   import java.nio.ByteOrder;
   import java.nio.ByteBuffer;
@@ -21,9 +22,9 @@
          boolean send = true;
          boolean valid = true;
          File dir = new File ("C://Users//ROC-HCI-1//Downloads//HEART-20170925T165908Z-001//HEART//tmpClient//tmpClient//bin//Debug");
-         String[] argument = new String[2];
+         String[] argument = new String[3];
          //argument[0] = "notepad.exe";
-         argument[0] = "haha";
+         argument[0] = "C:\\Users\\ROC-HCI-1\\Downloads\\HEART-20170925T165908Z-001\\HEART\\tmpClient\\tmpClient\\bin\\Debug\\tmpClient.exe";
          Runtime runtime = Runtime.getRuntime();
 
         try
@@ -62,7 +63,7 @@
             
           }
          }else{
-          if(counter % 15984 == 0){
+          if(counter % 1584 == 0){
         		//manually set the frequency to 2HZ...
             valid = true;
             counter = 0;
@@ -76,19 +77,20 @@
             //This will print stuff like 1,2,160016,160017
             send = !send;
             if (send){
-              temp2 = displayFloat;
-              argument[1] = Float.toString(temp2);
+              temp2 = Math.abs(displayFloat);
+              argument[2] = Float.toString(temp2);
               System.out.println("The first number is "+temp1 +" and the second one is " + temp2);
-              System.out.println(argument[0] + " hhhhh "+ argument[1]);
-              Process process = new ProcessBuilder("C:\\Users\\ROC-HCI-1\\Downloads\\HEART-20170925T165908Z-001\\HEART\\tmpClient\\tmpClient\\bin\\Debug\\tmpClient.exe","1.1","1.0").start();
+              System.out.println(argument[1] + " hhhhh "+ argument[2]);
+
+              Process process = new ProcessBuilder(argument).start();
               /*try{
               Process p = runtime.exec(new String[]{"tmpClient.exe","0.5","1.0"}, null , dir);
               }catch(IOException e){
                 e.printStackTrace();
               }*/
             }
-            temp1 = displayFloat;
-            argument[0] = Float.toString(temp1);
+            temp1 = Math.abs(displayFloat);
+            argument[1] = Float.toString(temp1);
           }
          }
          
