@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TrignoSDKExample">
+</Property><Property Name="Solution File" Value="J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\TrignoSDKExample.sln">
+</Property><Property Name="User Options File" Value="J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\TrignoSDKExample.suo">
+</Property><Property Name="Date" Value="Thursday, March 05, 2015">
+</Property><Property Name="Time" Value="10:46 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="TrignoSDKExample.sln" Description="File successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample.sln">
+</Event><Event ErrorLevel="0" Project="" Source="TrignoSDKExample.suo" Description="File successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample.suo">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\TrignoSDKExample.csproj" Description="Project file successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample\TrignoSDKExample.csproj">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\MainForm.cs" Description="File successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\MainForm.Designer.cs" Description="File successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample\MainForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\Program.cs" Description="File successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample\Program.cs">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\Properties\AssemblyInfo.cs" Description="File successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\Properties\Resources.Designer.cs" Description="File successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\Properties\Settings.Designer.cs" Description="File successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\Properties\Settings.settings" Description="File successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\MainForm.resx" Description="File successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\Properties\Resources.resx" Description="File successfully backed up as J:\Data\EW4\EW4\EW4App\WixBin\SDK Samples\Csharp\TrignoSDKExample\Backup\TrignoSDKExample\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\TrignoSDKExample.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TrignoSDKExample" Source="TrignoSDKExample\TrignoSDKExample.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\TrignoSDKExample.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="" Source="TrignoSDKExample.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TrignoSDKExample.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TrignoSDKExample" Source="TrignoSDKExample\TrignoSDKExample.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

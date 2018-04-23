@@ -1,0 +1,4 @@
+1. Please uninstall previous CGS software versions from your machine
+2. Install CyberGlove Systems software v 3.1.3
+3. Choose the option of Serial Port Redirector only for CGIII. Else decline
+4. Refer to "User Guide 2013" Pg 24. for Naming Conventions in DCU for running some of the CyberGlove and CyberTouch Demos
