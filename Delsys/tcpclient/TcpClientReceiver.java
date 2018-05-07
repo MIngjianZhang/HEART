@@ -31,6 +31,8 @@
          String nowTime = "";
          boolean send = true;
          boolean valid = true;
+         float totalEMG1;
+         float averageEMG1;
          File dir = new File ("C://Users//ROC-HCI-1//Downloads//HEART-20170925T165908Z-001//HEART//tmpClient//tmpClient//bin//Debug");
          String[] argument = new String[3];
          String handpositiontosend = "";
@@ -39,8 +41,9 @@
          File Handpos = new File("C:\\Users\\ROC-HCI-1\\Downloads\\Delsys\\tcpclient\\HanPosition.txt");
          File timelol = new File("C:\\Users\\ROC-HCI-1\\Downloads\\Delsys\\tcpclient\\time.txt");
          argument[0] = "C:\\Users\\ROC-HCI-1\\Downloads\\HEART-20170925T165908Z-001\\HEART\\tmpClient\\tmpClient\\bin\\Debug\\tmpClient.exe";
+         String cybergloveapp = "C:\\Users\\ROC-HCI-1\\Downloads\\cyberglove\\VirtualHand SDK\\VirtualHand SDK\\demos\\bin\\winnt_x64\\Release\\GetGloveData.exe";
          Runtime runtime = Runtime.getRuntime();
-
+         //Process cyberglove = new ProcessBuilder(cybergloveapp).start();
         try
         {
         //create input stream
@@ -64,7 +67,6 @@
         BufferedWriter writer2 = new BufferedWriter (ow2);
         BufferedWriter writer3 = new BufferedWriter (ow3);
         BufferedWriter writer4 = new BufferedWriter (ow4);
-
         //fw1.close();
         ByteBuffer dataBuf = ByteBuffer.allocate(12);
         //send line to server
@@ -91,7 +93,7 @@
           }
          }else{
           if(counter % 6384 == 0){
-        		//manually set the frequency to 2HZ 15984...
+        		//manually set the frequency to 2HZ 15984...16000 2Hz, 8000 4Hz, current 5Hz.
             valid = true;
             counter = 0;            
           }
@@ -123,14 +125,18 @@
               writer3.flush();
               writer4.write(nowTime);
               writer4.newLine();
-              writer4.flush();
+              writer4.flush(); 
               //System.out.println(nowTime);
-              Process process = new ProcessBuilder(argument).start();
+              Process process = new ProcessBuilder(argument).start();//should it be argument[] or plain argument?
               /*try{
               Process p = runtime.exec(new String[]{"tmpClient.exe","0.5","1.0"}, null , dir);
               }catch(IOException e){
                 e.printStackTrace();
               }*/
+              /*totalEMG1 = 0;
+              totalEMG1 = temp1 + totalEMG1;
+              averageEMG1 = totalEMG1/counter;
+              System.out.println("The average EMG signal is "+ averageEMG1); */
             }
             temp1 = Math.abs(displayFloat);
             argument[1] = Float.toString(temp1);
@@ -147,13 +153,14 @@
 }
     public static float tmpresult (float a, float b){
       float c;
-      c = 400000 *b - 400000* a;
+      c = 3000000 *b - 1500000* a;
       return c;
     }
     public static float HandPosition (float a, float b, float original){
       float handPosition = 0;
-      
-      float tmpClient = 400000 *b - 400000* a;
+      //for MINGJIAN ZHANG it is 200000 mine level2Patient would be  1000000
+      //for Dr.Ania is 300000 her level2Patient would be 1500000
+      float tmpClient = 3000000 *b - 1500000* a;
 
       handPosition = original + tmpClient;
       if (handPosition > 50){
