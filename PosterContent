@@ -2,8 +2,13 @@ Name:
 HEART: Hand simulation with EMG on HoloLens to help stroke rehabilitation
 
 Abstract:
-HEART is short for Holographic Electromyographic Automated Rehabilitation Technology. It is an attempt to use Mixed Reality
-devices in the case of 
+Stroke is the leading cause of adult disability in the United States. The symptoms of stroke often reflected in partial paralysis,
+balance disorder and speech difficulty. Researches suggest that a successful recovery of the affected limb usually involves with 
+multiple exercise on a daily basis based on the medical concept of neuroplasticity. To motivate patients to perform more exercises, 
+promising studies have done in rehabilitation games.Some researchers chose immersive Virtual Reality as the display for their game 
+development and others chose non-immersive flat screen. With the release of Microsoft HoloLens in 2016, Mixed Reality is proven to be 
+another option for researchers to consider in stroke rehabilitation field. In this study, we are using different machine learning algorithm
+to generate the pattern of transforming sEMG signal to smooth hand movement.
 
 
 Introduction:
