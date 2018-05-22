@@ -8,6 +8,7 @@ public class ProcessCGData{
 		openFile();
 		readFile();
 		closeFile();
+		
 	}
 
 	public void openFile(){
