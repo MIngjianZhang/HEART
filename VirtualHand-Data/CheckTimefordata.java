@@ -8,7 +8,7 @@ public class Test {
     public static void main(String [] args) {
 
         // The name of the file to open.
-        String fileinputName = "New Text Document.txt";
+        String fileinputName = "Timeforit.txt";
         String fileoutputName = "CyberGloveData.txt";
         String line = "what the fuvckc";
         String[] temp = null;
@@ -33,9 +33,8 @@ public class Test {
 
             while((sCurrentLine = bufferedReader.readLine()) != null){
             	
-            	if(sCurrentLine.startsWith("5") == true){
-                	temp = sCurrentLine.split(" ");
-                	CGData = temp[2];
+            	if(sCurrentLine.startsWith("deltaTime") == true){
+                	CGData = sCurrentLine;
                 	System.out.println(sCurrentLine);
                 	bufferedWriter.write(CGData);
                 	bufferedWriter.newLine();
