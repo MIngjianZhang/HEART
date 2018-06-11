@@ -12,9 +12,13 @@ public class Test {
         String fileoutputName = "CyberGloveData.txt";
         String line = "what the fuvckc";
         String[] temp = null;
+<<<<<<< Updated upstream
         String CGData = "Testing";
 
 
+=======
+        String CGData = null;
+>>>>>>> Stashed changes
 
         try{
             FileReader fileReader = new FileReader(fileinputName);
@@ -42,11 +46,15 @@ public class Test {
             	}
             }
 
+<<<<<<< Updated upstream
             /*while(line != null){ 
             	System.out.println(line);
            		
         	}*/            
             bufferedWriter.close();
+=======
+            System.out.println(CGData);
+>>>>>>> Stashed changes
 
         }catch(FileNotFoundException ex) {
             System.out.println(
