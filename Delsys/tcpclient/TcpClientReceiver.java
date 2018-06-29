@@ -35,13 +35,14 @@
          float averageEMG1;
          File dir = new File ("C://Users//ROC-HCI-1//Downloads//HEART-20170925T165908Z-001//HEART//tmpClient//tmpClient//bin//Debug");
          String[] argument = new String[3];
+         String[] sendhand = new String[2];
+         sendhand[0] = "C:\\Users\\ROC-HCI-1\\Downloads\\HEART-20170925T165908Z-001\\HEART\\tmpClient\\tmpClient\\bin\\Debug\\tmpClient.exe";
          String handpositiontosend = "";
          File EMG1 = new File("C:\\Users\\ROC-HCI-1\\Downloads\\Delsys\\tcpclient\\EMGSignal1.txt");
          File EMG2 = new File("C:\\Users\\ROC-HCI-1\\Downloads\\Delsys\\tcpclient\\EMGSignal2.txt");
          File Handpos = new File("C:\\Users\\ROC-HCI-1\\Downloads\\Delsys\\tcpclient\\HanPosition.txt");
          File timelol = new File("C:\\Users\\ROC-HCI-1\\Downloads\\Delsys\\tcpclient\\time.txt");
          argument[0] = "C:\\Users\\ROC-HCI-1\\Downloads\\HEART-20170925T165908Z-001\\HEART\\tmpClient\\tmpClient\\bin\\Debug\\tmpClient.exe";
-         String cybergloveapp = "C:\\Users\\ROC-HCI-1\\Downloads\\cyberglove\\VirtualHand SDK\\VirtualHand SDK\\demos\\bin\\winnt_x64\\Release\\GetGloveData.exe";
          Runtime runtime = Runtime.getRuntime();
          //Process cyberglove = new ProcessBuilder(cybergloveapp).start();
         try
@@ -74,6 +75,8 @@
 
         //read line from server
         //displayBytes = inFromServer.readLine();
+        //Process p = Runtime.getRuntime().exec(emmm);
+
         while(true)
         {
 	       byte[] tempBytes = new byte[4];
@@ -111,6 +114,8 @@
               float currentHandPosition = HandPosition(temp1,temp2,originalHandPosition);
               originalHandPosition = currentHandPosition;
               handpositiontosend = String.valueOf(currentHandPosition);
+              String str2 = Float.toString(currentHandPosition);
+              sendhand[1] = str2;
               System.out.println( tmpresult(temp1, temp2) + "              "+currentHandPosition);
               long nowTi = System.nanoTime();
               nowTime = Long.toString(nowTi/100000000);
@@ -127,7 +132,7 @@
               writer4.newLine();
               writer4.flush(); 
               //System.out.println(nowTime);
-              Process process = new ProcessBuilder(argument).start();//should it be argument[] or plain argument?
+              Process process = new ProcessBuilder(sendhand).start();//should it be argument[] or plain argument?
               /*try{
               Process p = runtime.exec(new String[]{"tmpClient.exe","0.5","1.0"}, null , dir);
               }catch(IOException e){
@@ -160,8 +165,8 @@
       float handPosition = 0;
       //for MINGJIAN ZHANG it is 200000 mine level2Patient would be  1000000
       //for Dr.Ania is 300000 her level2Patient would be 1500000
-      float tmpClient = 3000000 *b - 1500000* a;
-
+      //float tmpClient = 3000000 *b - 1500000* a;
+      float tmpClient = 900000 *b - 1200000* a;
       handPosition = original + tmpClient;
       if (handPosition > 50){
         handPosition = 50;
